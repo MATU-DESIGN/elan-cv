@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#10233f">
+  <meta name="description" content="Votre talent mérite un CV à sa hauteur. Créez un CV professionnel en français, choisissez votre modèle et personnalisez chaque détail. 2 000 FCFA par CV.">
+  <title>Élan CV — Votre talent mérite un CV à sa hauteur</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%232758ed'/%3E%3Cpath d='M18 44 43 19M23 19h20v20' fill='none' stroke='white' stroke-width='6'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="styles.css">
+  <script defer src="jspdf.umd.min.js"></script>
+  <script defer src="config.js"></script>
+  <script defer src="cv.js"></script>
+  <script defer src="app.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#contenu">Aller au contenu</a>
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="brand" href="#accueil" aria-label="Élan CV, accueil"><span class="brand-mark" aria-hidden="true">↗</span><span>élan<span class="brand-cv">cv</span><span class="brand-dot">.</span></span></a>
+      <nav class="desktop-nav" aria-label="Navigation principale">
+        <a href="#modeles" data-nav="modeles">Nos modèles</a><a href="#accueil/parcours">Comment ça marche</a><a href="#accueil/tarif">Le tarif</a>
+      </nav>
+      <div class="header-actions"><a class="space-link" href="#espace">Mes CV</a><a class="button button-small button-outline" href="#modeles">Créer mon CV <span aria-hidden="true">↗</span></a><button class="menu-button" data-action="menu" aria-label="Ouvrir le menu" aria-expanded="false">☰</button></div>
+    </div>
+    <nav class="mobile-nav" aria-label="Navigation mobile" hidden><a href="#modeles">Nos modèles</a><a href="#accueil/parcours">Comment ça marche</a><a href="#accueil/tarif">Le tarif</a><a href="#espace">Mes CV</a></nav>
+  </header>
+  <main id="contenu" tabindex="-1">
+    <div id="home-view" class="view">
+      <section class="hero">
+        <div class="hero-copy">
+          <div class="eyebrow"><span class="tiny-star">✦</span> LE PROCHAIN CHAPITRE COMMENCE ICI</div>
+          <h1>Votre talent<br>mérite un CV<br><span>à sa hauteur.</span></h1>
+          <p>Vous avez le parcours. Donnez-lui la présentation qu’il mérite. Un CV soigné, personnel, prêt pour votre prochaine opportunité.</p>
+          <div class="hero-buttons"><a href="#modeles" class="button button-primary">Créer mon CV <span aria-hidden="true">↗</span></a><button class="button button-plain" data-action="new-custom">Partir d’une page blanche <span aria-hidden="true">→</span></button></div>
+          <div class="hero-notes"><span><span class="check">✓</span> Sans inscription</span><span><span class="check">✓</span> PDF au format A4</span></div>
+          <div class="local-line"><span class="flag" aria-hidden="true"><i>★</i></span> Pensé pour vos ambitions, au Burkina Faso.</div>
+        </div>
+        <div class="hero-stage" aria-label="Exemple fictif d’un CV créé avec Élan CV">
+          <div class="stage-orbit orbit-one"></div><div class="stage-orbit orbit-two"></div>
+          <span class="stage-spark spark-one">✧</span><span class="stage-spark spark-two">✦</span>
+          <div class="back-paper"></div><div id="hero-cv" class="hero-paper"></div>
+          <div class="floating-note note-design"><span class="note-icon">✦</span><div>Votre parcours.<br><strong>Votre signature.</strong></div></div>
+          <div class="floating-note note-pdf"><span class="file-icon">PDF</span><div><strong>Prêt à faire bonne impression</strong><small>Clair. Soigné. Professionnel.</small></div><span class="note-check">✓</span></div>
+          <span class="stage-caption">UN APERÇU DE VOTRE PROCHAIN CV · EXEMPLE FICTIF</span>
+        </div>
+      </section>
+      <div class="benefit-strip"><div><span>01</span> Un design qui vous ressemble</div><div><span>02</span> Votre CV évolue avec vous</div><div><span>03</span> Un tarif clair : <strong>2 000 FCFA</strong></div></div>
+      <section id="modeles-home" class="section model-section">
+        <div class="section-heading"><div><div class="eyebrow">LA PREMIÈRE IMPRESSION COMPTE</div><h2>Un modèle. Mille façons<br>de vous démarquer.</h2></div><div class="section-aside"><p>Sobre, audacieux ou classique.<br>Commencez avec ce qui vous ressemble.</p><a class="text-link" href="#modeles">Explorer les 6 modèles <span>↗</span></a></div></div>
+        <div id="home-models" class="model-grid home-models"></div>
+        <div class="custom-banner"><span class="custom-mark" aria-hidden="true">＋</span><div><h3>Vous avez votre propre idée ?</h3><p>Une page blanche, vos couleurs, vos rubriques. À vous de créer.</p></div><button class="button button-outline" data-action="new-custom">Créer mon propre CV <span>↗</span></button></div>
+      </section>
+      <section id="parcours" class="section journey-section"><div class="section-heading"><div><div class="eyebrow">DE L’IDÉE AU PDF</div><h2>Votre prochain CV,<br>en trois étapes.</h2></div><p class="muted section-aside">Pas besoin de savoir faire du design.<br>Concentrez-vous sur votre histoire.</p></div><div class="steps"><article><span class="step-number">01 <span>↗</span></span><h3>Trouvez votre style</h3><p>Choisissez un modèle de la collection ou composez votre propre mise en page.</p></article><article><span class="step-number">02 <span>↗</span></span><h3>Racontez votre parcours</h3><p>Ajoutez vos expériences, votre formation et vos compétences. L’aperçu évolue en direct.</p></article><article><span class="step-number">03 <span>↗</span></span><h3>Faites le premier pas</h3><p>Vérifiez chaque détail et téléchargez un PDF propre, prêt à accompagner votre candidature.</p></article></div></section>
+      <section id="tarif" class="section price-section"><div class="price-copy"><div class="eyebrow">LE TALENT N’A PAS BESOIN DE COMPLICATIONS</div><h2>Un petit prix.<br>Un grand premier pas.</h2><p>Un tarif unique par CV, sans abonnement.<br>Vous gardez la main sur votre présentation.</p><div class="payment-coming"><span class="small-dot"></span> Paiement Mobile Money prévu prochainement</div></div><div class="price-card"><div class="price-card-top"><span>VOTRE CV PROFESSIONNEL</span><span class="price-chip">TARIF UNIQUE</span></div><div class="price">2 000 <span>FCFA</span></div><p class="price-per">par CV · sans abonnement</p><ul><li>Tous les modèles de la collection</li><li>Photo et personnalisation du design</li><li>Aperçu en direct et export PDF</li><li>Modifications conservées sur cet appareil</li></ul><a href="#modeles" class="button button-primary">Commencer mon CV <span>↗</span></a><p class="trial-note">Version d’essai : export accessible sans paiement.<br>Aucun prélèvement ni paiement validé sur ce site.</p></div></section>
+      <section class="section faq-section"><div><div class="eyebrow">ON VOUS RÉPOND</div><h2>Avant de vous lancer.</h2></div><div class="faq-list"><details><summary>Ai-je besoin de créer un compte ?<span>＋</span></summary><p>Non. L’accès est direct, sans inscription ni connexion Google. Choisissez un modèle ou partez d’une page blanche. Vos CV sont conservés dans votre navigateur, sur cet appareil. Vous pouvez télécharger une sauvegarde depuis « Mes CV ».</p></details><details><summary>Est-ce que je peux changer de modèle ?<span>＋</span></summary><p>Oui, à tout moment dans l’éditeur. Votre contenu reste en place quand vous changez de modèle, de couleur ou de police.</p></details><details><summary>Comment fonctionne le paiement ?<span>＋</span></summary><p>Le tarif prévu est de 2 000 FCFA par CV. Le paiement Mobile Money n’est pas encore disponible. Pendant cette version d’essai, le PDF peut être téléchargé sans paiement ; aucune transaction n’est effectuée.</p></details><details><summary>Où sont conservées ma photo et mes informations ?<span>＋</span></summary><p>Dans le stockage local de votre navigateur. Elles ne sont pas envoyées à un serveur par cette version. Effacer les données du navigateur les supprime. Pensez à exporter une sauvegarde, surtout sur un appareil partagé.</p></details></div></section>
+      <section class="closing-section"><span class="closing-star" aria-hidden="true">✦</span><div><span class="eyebrow">À VOUS D’ÉCRIRE LA SUITE</span><h2>La prochaine opportunité<br>commence avec vous.</h2></div><a href="#modeles" class="button button-white">Je crée mon CV <span>↗</span></a></section>
+    </div>
+    <section id="models-view" class="view collection-view section" hidden><div class="collection-top"><div><div class="eyebrow">LA COLLECTION ÉLAN</div><h1>Le fond, c’est vous.<br><span>Choisissez la forme.</span></h1><p class="muted">Six modèles inspirés de votre sélection. Chaque détail se personnalise.</p></div><button class="button button-outline" data-action="new-custom">＋ Créer mon propre CV</button></div><div class="collection-toolbar"><div class="filter-tabs" role="group" aria-label="Filtrer les modèles"><button class="active" data-filter="all" aria-pressed="true">Tous les modèles</button><button data-filter="sobre" aria-pressed="false">Sobres</button><button data-filter="moderne" aria-pressed="false">Modernes</button><button data-filter="creatif" aria-pressed="false">Créatifs</button></div><span class="muted small" id="model-count">6 modèles · exemples fictifs</span></div><div id="all-models" class="model-grid"></div></section>
+    <section id="editor-view" class="view editor-view" hidden><div class="editor-toolbar"><div class="document-name"><a href="#espace" class="icon-button" aria-label="Retour à mes CV">←</a><input id="doc-title" maxlength="80" aria-label="Nom de votre CV"><span id="save-state" class="save-state" aria-live="polite">Sur cet appareil</span></div><div class="editor-actions"><button class="button button-small button-outline" data-action="preview" id="preview-toggle">Aperçu</button><button class="button button-small button-primary" data-action="export-dialog">Télécharger le PDF <span>↓</span></button></div></div><div class="editor-layout"><aside class="editor-sidebar"><div class="editor-progress"><span>VOTRE CV PREND FORME</span><strong id="progress-label">0 %</strong><div><i id="progress-bar"></i></div></div><nav id="editor-tabs" aria-label="Rubriques de l’éditeur"></nav><a class="editor-help" href="#accueil/parcours"><span>?</span> Besoin d’un repère ?</a></aside><div class="form-column"><div id="editor-form"></div><div class="form-navigation"><button class="button button-outline" data-action="previous-step">← Précédent</button><button class="button button-primary" data-action="next-step">Continuer →</button></div><p class="local-editor-note">Vos informations restent sur cet appareil. Sauvegardez-les depuis « Mes CV ».</p></div><div class="preview-column"><div class="preview-heading"><span><i class="small-dot"></i> APERÇU EN DIRECT</span><div><button class="icon-button" data-action="zoom-out" aria-label="Réduire l’aperçu">−</button><span id="zoom-label">100 %</span><button class="icon-button" data-action="zoom-in" aria-label="Agrandir l’aperçu">＋</button></div></div><div id="live-preview" class="live-preview" aria-label="Aperçu de votre CV"></div><p class="preview-footer"><span id="page-count">1 page</span><span>A4 · 210 × 297 mm</span></p></div></div></section>
+    <section id="space-view" class="view section space-view" hidden><div class="collection-top"><div><div class="eyebrow">VOTRE ESPACE</div><h1>Vos ambitions,<br><span>bien rangées.</span></h1><p class="muted">Retrouvez les CV enregistrés dans ce navigateur.</p></div><a href="#modeles" class="button button-primary">＋ Nouveau CV</a></div><div class="storage-notice"><span class="notice-symbol">⌁</span><div><strong>Vos CV, sans compte ni inscription</strong><p>Ils sont conservés uniquement dans ce navigateur. Téléchargez une sauvegarde pour les transférer vers un autre appareil.</p></div><button class="text-link" data-action="privacy">Comment sont conservés mes CV ? ↗</button></div><div class="space-toolbar"><span id="doc-count" class="muted small"></span><div><button class="text-link" data-action="backup">↓ Sauvegarder mes données</button><label class="text-link import-label">↑ Importer une sauvegarde<input id="import-file" type="file" accept="application/json,.json" hidden></label></div></div><div id="saved-docs" class="saved-grid"></div></section>
+    <noscript><div class="section">Activez JavaScript dans votre navigateur pour utiliser l’éditeur de CV. Le tarif est de 2 000 FCFA par CV ; aucun paiement n’est actuellement disponible.</div></noscript>
+  </main>
+  <footer id="site-footer" class="site-footer"><div><a class="brand" href="#accueil"><span class="brand-mark">↗</span><span>élan<span class="brand-cv">cv</span><span class="brand-dot">.</span></span></a><p>Votre parcours mérite de l’élan.</p></div><div class="footer-links"><a href="#modeles">Nos modèles</a><a href="#espace">Mes CV</a><button data-action="privacy">Confidentialité</button><button data-action="about">À propos</button></div><div class="footer-bottom"><span>© 2026 Élan CV · Burkina Faso</span><span>Créé pour les parcours qui avancent. <span class="footer-arrow">↗</span></span></div></footer>
+  <dialog id="modal" aria-labelledby="modal-title"><button class="modal-close icon-button" data-action="close-modal" aria-label="Fermer">×</button><div id="modal-content"></div></dialog>
+  <div id="toast" role="status" aria-live="polite" hidden></div>
+</body>
+</html>
